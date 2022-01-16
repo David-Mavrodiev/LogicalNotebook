@@ -1,0 +1,2 @@
+# LogicalNotebook
+Logical expressions calculator
