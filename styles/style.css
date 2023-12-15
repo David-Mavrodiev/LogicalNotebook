@@ -1,0 +1,101 @@
+html {
+    background-image: linear-gradient(to left, rgba(2,0,36,1), rgba(7,6,95,1), rgba(9,9,121,1));
+    height: 100%;
+}
+
+body {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 1px dashed turquoise;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    padding: 1%;
+    flex: 1 1 0;
+}
+
+.fit-col {
+    padding: 1%;
+    flex: 1 0 0;
+}
+
+.justified {
+    display: flex;
+    justify-content: center;
+}
+
+#computations, #results {
+    height: 300px;
+    overflow-y: auto;
+}
+
+#computations-container {
+    border-left: 3px solid turquoise;
+}
+
+#computations-container {
+    padding: 1%;
+}
+
+.result, .computation {
+    cursor: pointer;
+    padding: 4px;
+    border-left: 4px solid turquoise;
+    margin: 15px;
+    width: fit-content;
+}
+
+.result:hover, .computation:hover {
+    border-left: 0px;
+    border-right: 4px solid turquoise;
+}
+
+.badge {
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.true {
+    background-color: green;
+}
+
+.false {
+    background-color: red;
+}
+
+#compile {
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid turquoise;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+}
+
+#compile:hover {
+    background-color: turquoise;
+    border: 3px solid transparent;
+}
+
+textarea {
+    background-color: transparent;
+    border: 3px solid turquoise;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+textarea:focus {
+    outline: transparent;
+}
